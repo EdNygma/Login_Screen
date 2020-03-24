@@ -5,26 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="pin_login/pin-login.css" rel="stylesheet">
+    <link href="pin-login/pin-login.css" rel="stylesheet">
 </head>
 <body>
         <h1> Login Screen - html css & js</h1>
-        <div class="pin-login">
+        <div class="pin-login" id="mainPinLogin">
             <input type="password" readonly class="pin-login__text ">
             <div class="pin-login__numpad">
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div><br>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div><br>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key">0</div><br>
-                <div class="pin-login__key material-icons">backspace</div>
-                <div class="pin-login__key">0</div>
-                <div class="pin-login__key material-icons">done</div>
+                <!-- <div class="pin-login__key"></div>
+                <div class="pin-login__key" materail-icons>done</div> -->
+                
             </div>
         </div>
+        <script src="pin-login/pin-login.js" ></script>
+        <script>
+            new PinLogin({
+                el: document.getElementById("mainPinLogin"),
+                loginEndpoint: "login.php",
+                redirectTo: "dashboard.html",
+                maxNumbers: 4 
+            });
+        </script>
+
 </body>
 </html>
