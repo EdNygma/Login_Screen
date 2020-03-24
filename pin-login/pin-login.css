@@ -4,7 +4,7 @@
   padding: 10px;
   font-size: 28px;
   background: #d9deff;
-  border: 1px solid #363b5e;
+  border: 3px solid #363b5e;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -21,7 +21,7 @@
   text-align: center;
   letter-spacing: 0.2em;
   background: rgba(0, 0, 0, 0.15);
-  border: none;
+  border: 3px solid #363b5e;
   border-radius: 10px;
   outline: none;
   cursor: default;
@@ -60,6 +60,7 @@
   background: rgba(0, 0, 0, 0.15);
   color: #363b5e;
   border-radius: 50%;
+    border: 3px solid #363b5e;
   display: inline-flex;
   align-items: center;
   justify-content: center;
